@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     const fetchPokemonData = async () => {
       const promises = [];
-      for (let i = 1; i <= 151; i++) {
+      for (let i = 1; i <= 10; i++) {
         promises.push(axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`));
       }
       const results = await Promise.all(promises);
